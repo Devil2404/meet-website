@@ -456,15 +456,20 @@ export default function Features() {
             const Icon = feature.icon;
 
             return (
-              <motion.div
+              <div
                 key={feature.label}
-                {...fadeUp}
                 className={`flex flex-col gap-10 md:gap-16 items-center ${
                   isEven ? 'md:flex-row-reverse' : 'md:flex-row'
                 }`}
               >
                 {/* Text side */}
-                <div className="flex-1 max-w-lg">
+                <motion.div
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-80px' }}
+                  transition={{ duration: 0.6, ease: [0.25, 0.4, 0, 1] as const }}
+                  className="flex-1 max-w-lg"
+                >
                   <span
                     className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium mb-5"
                     style={{
@@ -496,19 +501,22 @@ export default function Features() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </motion.div>
 
-                {/* Mockup side */}
+                {/* Mockup side — parallax offset: fades from y:40 with delay */}
                 <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-80px' }}
+                  transition={{ duration: 0.7, delay: 0.15, ease: [0.25, 0.4, 0, 1] as const }}
                   whileHover={{ y: -4 }}
-                  transition={{ duration: 0.3, ease: [0.25, 0.4, 0, 1] as const }}
                   className="flex-1 w-full"
                 >
                   <div className="rounded-2xl border border-white/[0.06] bg-voxa-surface1 p-6 overflow-hidden">
                     {MockupComponent && <MockupComponent />}
                   </div>
                 </motion.div>
-              </motion.div>
+              </div>
             );
           })}
         </div>

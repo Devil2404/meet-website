@@ -129,6 +129,13 @@ export default function CrmAutomation() {
           ))}
         </motion.div>
       </div>
+
+      {/* Subtle coming soon indicator */}
+      <div className="mt-8 max-w-6xl mx-auto flex justify-center">
+        <span className="text-[10px] text-white/[0.12] tracking-widest uppercase select-none">
+          CRM integrations · Coming Soon
+        </span>
+      </div>
     </section>
   );
 }

@@ -99,6 +99,24 @@ const config: Config = {
           '0%': { opacity: '0', transform: 'translateX(24px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
+        'float': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-12px)' },
+        },
+        'glow-pulse': {
+          '0%, 100%': { opacity: '0.4', filter: 'blur(40px)' },
+          '50%': { opacity: '0.8', filter: 'blur(60px)' },
+        },
+        'gradient-shift': {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+        'flow': {
+          '0%': { opacity: '0', transform: 'translateX(-100%)' },
+          '50%': { opacity: '1' },
+          '100%': { opacity: '0', transform: 'translateX(100%)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -106,6 +124,10 @@ const config: Config = {
         'fade-up': 'fade-up 0.6s cubic-bezier(0.25, 0.4, 0, 1) forwards',
         'fade-in': 'fade-in 0.6s cubic-bezier(0.25, 0.4, 0, 1) forwards',
         'slide-in-right': 'slide-in-right 0.6s cubic-bezier(0.25, 0.4, 0, 1) forwards',
+        'float': 'float 6s ease-in-out infinite',
+        'float-slow': 'float 8s ease-in-out infinite',
+        'glow-pulse': 'glow-pulse 4s ease-in-out infinite',
+        'gradient-shift': 'gradient-shift 8s ease infinite',
       },
     },
   },

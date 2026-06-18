@@ -31,6 +31,58 @@ export default function FinalCta() {
       {/* Grid overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
 
+      {/* Floating gradient orbs */}
+      <motion.div
+        className="absolute top-1/4 left-[10%] w-72 h-72 rounded-full pointer-events-none"
+        style={{
+          background: 'radial-gradient(circle, rgba(123,92,245,0.15) 0%, transparent 70%)',
+          filter: 'blur(60px)',
+        }}
+        animate={{
+          y: [0, -30, 0],
+          x: [0, 15, 0],
+          scale: [1, 1.1, 1],
+        }}
+        transition={{
+          duration: 8,
+          repeat: Infinity,
+          ease: 'easeInOut',
+        }}
+      />
+      <motion.div
+        className="absolute bottom-1/4 right-[10%] w-64 h-64 rounded-full pointer-events-none"
+        style={{
+          background: 'radial-gradient(circle, rgba(99,102,241,0.12) 0%, transparent 70%)',
+          filter: 'blur(50px)',
+        }}
+        animate={{
+          y: [0, 25, 0],
+          x: [0, -20, 0],
+          scale: [1, 1.15, 1],
+        }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: 'easeInOut',
+        }}
+      />
+      <motion.div
+        className="absolute top-1/2 left-[50%] w-56 h-56 rounded-full pointer-events-none -translate-x-1/2"
+        style={{
+          background: 'radial-gradient(circle, rgba(139,92,246,0.1) 0%, transparent 70%)',
+          filter: 'blur(55px)',
+        }}
+        animate={{
+          y: [0, -20, 0],
+          scale: [1, 1.08, 1],
+        }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+          ease: 'easeInOut',
+        }}
+      />
+
       {/* Content */}
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <motion.h2
@@ -58,9 +110,23 @@ export default function FinalCta() {
           className="mt-10"
         >
           <motion.button
-            className="px-10 py-5 rounded-xl bg-gradient-to-r from-voxa-purple to-voxa-indigo text-white font-semibold text-lg inline-flex items-center gap-2 cursor-pointer"
+            className="px-10 py-5 rounded-xl bg-gradient-to-r from-voxa-purple to-voxa-indigo text-white font-semibold text-lg inline-flex items-center gap-2 cursor-pointer relative"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
+            animate={{
+              boxShadow: [
+                '0 0 0px rgba(123,92,245,0)',
+                '0 0 20px rgba(123,92,245,0.4)',
+                '0 0 0px rgba(123,92,245,0)',
+              ],
+            }}
+            transition={{
+              boxShadow: {
+                duration: 2.5,
+                repeat: Infinity,
+                ease: 'easeInOut',
+              },
+            }}
           >
             <Globe className="w-5 h-5" />
             Add Voxa to Chrome

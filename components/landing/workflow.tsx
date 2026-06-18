@@ -45,7 +45,7 @@ const staggerChild = {
 
 function ConnectorLine({ color }: { color: string }) {
   return (
-    <div className="flex items-center justify-center md:w-16 w-px md:h-px h-10">
+    <div className="flex items-center justify-center md:w-16 w-px md:h-px h-10 relative">
       <div
         className="w-full h-full"
         style={{
@@ -54,6 +54,14 @@ function ConnectorLine({ color }: { color: string }) {
             'repeating-linear-gradient(90deg, transparent, transparent 3px, black 3px, black 8px)',
           WebkitMaskImage:
             'repeating-linear-gradient(90deg, transparent, transparent 3px, black 3px, black 8px)',
+        }}
+      />
+      {/* Pulsing flow dot */}
+      <div
+        className="absolute w-2 h-2 rounded-full animate-flow"
+        style={{
+          background: color,
+          boxShadow: `0 0 8px ${color}88, 0 0 16px ${color}44`,
         }}
       />
     </div>
@@ -90,19 +98,28 @@ export default function Workflow() {
                   {...staggerChild}
                   className="flex flex-col items-center gap-3 group"
                 >
-                  <motion.div
-                    whileHover={{
-                      scale: 1.08,
-                      boxShadow: `0 0 24px ${step.color}22`,
-                    }}
-                    transition={{ duration: 0.25 }}
-                    className="w-14 h-14 rounded-2xl border border-white/[0.06] bg-voxa-surface1 flex items-center justify-center transition-colors group-hover:border-white/[0.12]"
-                    style={{
-                      background: `linear-gradient(135deg, #111119, ${step.color}11)`,
-                    }}
-                  >
-                    <Icon size={22} style={{ color: step.color }} />
-                  </motion.div>
+                  <div className="relative">
+                    {/* Faint glow under icon */}
+                    <div
+                      className="absolute inset-0 rounded-2xl opacity-30 blur-xl pointer-events-none"
+                      style={{ background: step.color }}
+                    />
+                    <motion.div
+                      whileHover={{
+                        scale: 1.08,
+                        boxShadow: `0 0 24px ${step.color}22`,
+                      }}
+                      whileInView={{ scale: [0.9, 1] }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, ease: [0.25, 0.4, 0, 1] }}
+                      className="w-14 h-14 rounded-2xl border border-white/[0.06] bg-voxa-surface1 flex items-center justify-center transition-colors group-hover:border-white/[0.12] relative"
+                      style={{
+                        background: `linear-gradient(135deg, #111119, ${step.color}11)`,
+                      }}
+                    >
+                      <Icon size={22} style={{ color: step.color }} />
+                    </motion.div>
+                  </div>
                   <span className="text-xs text-white/50 font-medium tracking-wide">
                     {step.label}
                   </span>

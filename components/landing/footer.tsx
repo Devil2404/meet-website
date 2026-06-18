@@ -23,26 +23,18 @@ const columns: FooterColumn[] = [
     ],
   },
   {
-    title: 'Company',
-    links: [
-      { label: 'About', href: '#' },
-      { label: 'Blog', href: '#' },
-      { label: 'Careers', href: '#' },
-    ],
-  },
-  {
     title: 'Legal',
     links: [
-      { label: 'Privacy', href: '#' },
-      { label: 'Terms', href: '#' },
-      { label: 'Security', href: '#' },
+      { label: 'Privacy', href: '/privacy' },
+      { label: 'Terms', href: '/terms' },
+      { label: 'Security', href: '/security' },
     ],
   },
   {
     title: 'Support',
     links: [
-      { label: 'Help Center', href: '#' },
-      { label: 'Contact', href: '#' },
+      { label: 'Help Center', href: '/help' },
+      { label: 'Contact', href: '/contact' },
     ],
   },
 ];
@@ -51,10 +43,12 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/[0.06] bg-voxa-bg">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
-            <span className="gradient-text text-xl font-bold">Voxa</span>
+            <a href="/" className="inline-block">
+              <img src="/logo.png" alt="Voxa Logo" className="w-[115px] h-auto" />
+            </a>
             <p className="text-white/30 text-sm mt-4 max-w-xs">
               AI meeting intelligence for Google Meet. Free forever.
             </p>

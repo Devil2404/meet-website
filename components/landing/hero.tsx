@@ -107,7 +107,7 @@ function ProductMockup() {
       style={{ rotateX, rotateY, perspective: 1200 }}
       className="mt-20 w-full max-w-5xl mx-auto"
     >
-      <div className="border border-white/[0.06] rounded-2xl overflow-hidden shadow-2xl bg-voxa-surface2 relative">
+      <div className="border border-white/[0.06] rounded-2xl overflow-hidden shadow-2xl bg-voxa-surface2 relative animate-border-glow">
         {/* Recording Indicator */}
         <div className="absolute top-4 right-4 z-10 flex items-center gap-2 px-2.5 py-1 rounded-full bg-red-500/10 border border-red-500/20">
           <span className="relative flex h-2 w-2">
@@ -214,6 +214,52 @@ export default function Hero() {
       {/* Grid overlay */}
       <div className="absolute inset-0 pointer-events-none bg-grid-subtle" />
 
+      {/* Floating animated orbs */}
+      <motion.div
+        className="absolute top-[10%] left-[15%] w-[320px] h-[320px] rounded-full pointer-events-none"
+        style={{ background: 'rgba(123,92,245,0.07)', filter: 'blur(100px)' }}
+        animate={{
+          x: [0, 40, -20, 0],
+          y: [0, -30, 20, 0],
+          scale: [1, 1.15, 0.95, 1],
+          opacity: [0.07, 0.1, 0.05, 0.07],
+        }}
+        transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
+      />
+      <motion.div
+        className="absolute top-[55%] right-[10%] w-[280px] h-[280px] rounded-full pointer-events-none"
+        style={{ background: 'rgba(79,106,250,0.06)', filter: 'blur(100px)' }}
+        animate={{
+          x: [0, -35, 25, 0],
+          y: [0, 25, -35, 0],
+          scale: [1, 0.9, 1.1, 1],
+          opacity: [0.06, 0.08, 0.05, 0.06],
+        }}
+        transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
+      />
+      <motion.div
+        className="absolute top-[30%] right-[25%] w-[400px] h-[400px] rounded-full pointer-events-none"
+        style={{ background: 'rgba(28,196,232,0.04)', filter: 'blur(120px)' }}
+        animate={{
+          x: [0, 30, -40, 0],
+          y: [0, -40, 15, 0],
+          scale: [1, 1.1, 0.9, 1],
+          opacity: [0.04, 0.06, 0.03, 0.04],
+        }}
+        transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }}
+      />
+      <motion.div
+        className="absolute bottom-[15%] left-[30%] w-[240px] h-[240px] rounded-full pointer-events-none"
+        style={{ background: 'rgba(123,92,245,0.05)', filter: 'blur(80px)' }}
+        animate={{
+          x: [0, -20, 30, 0],
+          y: [0, 30, -20, 0],
+          scale: [1, 1.12, 0.88, 1],
+          opacity: [0.05, 0.08, 0.04, 0.05],
+        }}
+        transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+      />
+
       <motion.div {...stagger} className="relative z-10 w-full px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
@@ -261,15 +307,6 @@ export default function Hero() {
                   animation: 'shimmer 2.5s infinite',
                 }}
               />
-            </motion.a>
-            <motion.a
-              href="#"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="px-7 py-3.5 rounded-xl border border-white/[0.1] bg-white/[0.03] text-white/70 font-medium text-base flex items-center gap-2"
-            >
-              <Play size={16} />
-              Watch Demo
             </motion.a>
           </motion.div>
         </div>

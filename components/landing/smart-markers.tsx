@@ -44,6 +44,7 @@ interface TranscriptLine {
   after: string;
   badge: string;
   badgeLabel: string;
+  icon: React.ElementType;
 }
 
 const transcriptLines: TranscriptLine[] = [
@@ -56,7 +57,8 @@ const transcriptLines: TranscriptLine[] = [
     keyword: 'budget of $50,000',
     after: ' for the new campaign rollout this quarter.',
     badge: 'bg-amber-500/10 text-amber-400 border border-amber-500/20',
-    badgeLabel: '💰 Budget',
+    badgeLabel: 'Budget',
+    icon: DollarSign,
   },
   {
     speaker: 'Mike Rodriguez',
@@ -67,7 +69,8 @@ const transcriptLines: TranscriptLine[] = [
     keyword: 'compare to Salesforce',
     after: ' and see where our feature set stands.',
     badge: 'bg-rose-500/10 text-rose-400 border border-rose-500/20',
-    badgeLabel: '🏢 Competitor',
+    badgeLabel: 'Competitor',
+    icon: Building2,
   },
   {
     speaker: 'Emily Johnson',
@@ -78,7 +81,8 @@ const transcriptLines: TranscriptLine[] = [
     keyword: 'go with option B',
     after: ' — it aligns better with our roadmap.',
     badge: 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20',
-    badgeLabel: '✅ Decision',
+    badgeLabel: 'Decision',
+    icon: CheckCircle2,
   },
   {
     speaker: 'David Park',
@@ -89,7 +93,8 @@ const transcriptLines: TranscriptLine[] = [
     keyword: 'compliance issues',
     after: ' with the EU data residency requirements.',
     badge: 'bg-orange-500/10 text-orange-400 border border-orange-500/20',
-    badgeLabel: '⚠️ Risk',
+    badgeLabel: 'Risk',
+    icon: AlertTriangle,
   },
   {
     speaker: 'Sarah Chen',
@@ -100,7 +105,8 @@ const transcriptLines: TranscriptLine[] = [
     keyword: 'reconnect next Tuesday',
     after: ' with updated numbers from the finance team.',
     badge: 'bg-sky-500/10 text-sky-400 border border-sky-500/20',
-    badgeLabel: '📅 Follow Up',
+    badgeLabel: 'Follow Up',
+    icon: CalendarCheck,
   },
   {
     speaker: 'Mike Rodriguez',
@@ -111,7 +117,8 @@ const transcriptLines: TranscriptLine[] = [
     keyword: 'end of quarter',
     after: ' or we risk losing the contract.',
     badge: 'bg-violet-500/10 text-violet-400 border border-violet-500/20',
-    badgeLabel: '⏰ Deadline',
+    badgeLabel: 'Deadline',
+    icon: Clock,
   },
 ];
 
@@ -227,18 +234,32 @@ export default function SmartMarkers() {
                     </span>
                     <span className="text-xs text-white/20">{line.time}</span>
                     <span
-                      className={`ml-auto text-[10px] px-2 py-0.5 rounded-full font-medium ${line.badge}`}
+                      className={`ml-auto text-[10px] px-2 py-0.5 rounded-full font-medium ${line.badge} flex items-center gap-1`}
                     >
+                      <line.icon className="w-3 h-3" />
                       {line.badgeLabel}
                     </span>
                   </div>
                   <p className="text-sm text-white/50 leading-relaxed">
                     {line.before}
-                    <span
+                    <motion.span
                       className={`inline-flex px-1.5 py-0.5 rounded-md text-xs font-medium mx-0.5 ${line.badge}`}
+                      animate={{
+                        opacity: [1, 0.7, 1],
+                        boxShadow: [
+                          '0 0 0px rgba(123,92,245,0)',
+                          '0 0 8px rgba(123,92,245,0.3)',
+                          '0 0 0px rgba(123,92,245,0)',
+                        ],
+                      }}
+                      transition={{
+                        duration: 2.5,
+                        repeat: Infinity,
+                        ease: 'easeInOut',
+                      }}
                     >
                       {line.keyword}
-                    </span>
+                    </motion.span>
                     {line.after}
                   </p>
                 </div>
@@ -260,11 +281,13 @@ export default function SmartMarkers() {
           <motion.div
             key={cat.name}
             variants={item}
-            whileHover={{ y: -2 }}
+            whileHover={{ y: -2, boxShadow: '0 4px 20px rgba(123,92,245,0.15)' }}
             className="p-5 rounded-xl border border-white/[0.06] bg-voxa-surface1 hover:border-white/[0.12] transition-all cursor-default group"
           >
             <div className="flex items-center gap-3">
-              <span className="text-xl">{cat.emoji}</span>
+              <div className="w-8 h-8 rounded bg-white/5 flex items-center justify-center text-voxa-purple">
+                <cat.icon className="w-4 h-4" />
+              </div>
               <span className="font-semibold text-white">{cat.name}</span>
             </div>
             <p className="mt-2 text-sm text-white/40 leading-relaxed">

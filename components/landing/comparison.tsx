@@ -76,9 +76,9 @@ export default function Comparison() {
               <th className="p-4 text-left text-sm font-medium text-white/40">
                 Feature
               </th>
-              <th className="p-4 text-center relative bg-voxa-purple/5">
+              <th className="p-4 text-center relative bg-voxa-purple/5" style={{ boxShadow: '0 0 30px rgba(123,92,245,0.08) inset' }}>
                 <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-voxa-purple to-voxa-indigo" />
-                <span className="gradient-text font-bold text-sm">Voxa</span>
+                <img src="/logo.png" alt="Voxa" className="h-5 w-auto mx-auto" />
               </th>
               <th className="p-4 text-center text-sm font-medium text-white/40">
                 tl;dv
@@ -94,7 +94,7 @@ export default function Comparison() {
                 key={row.feature}
                 className={`border-b border-white/[0.04] ${
                   i % 2 === 1 ? 'bg-white/[0.01]' : ''
-                }`}
+                } transition-all duration-300 hover:bg-white/[0.03]`}
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-40px' }}
@@ -102,6 +102,9 @@ export default function Comparison() {
                   duration: 0.4,
                   ease: [0.25, 0.4, 0, 1] as const,
                   delay: i * 0.05,
+                }}
+                whileHover={{
+                  background: 'linear-gradient(90deg, rgba(123,92,245,0.03) 0%, rgba(123,92,245,0.06) 50%, rgba(123,92,245,0.03) 100%)',
                 }}
               >
                 <td className="p-4 text-sm text-white/70">{row.feature}</td>
