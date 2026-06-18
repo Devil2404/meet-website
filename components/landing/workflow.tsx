@@ -77,14 +77,14 @@ export default function Workflow() {
         {/* Steps */}
         <motion.div
           {...stagger}
-          className="flex flex-col md:flex-row items-center justify-center gap-0"
+          className="flex flex-col md:flex-row items-center md:items-start justify-center gap-0"
         >
           {steps.map((step, i) => {
             const Icon = step.icon;
             return (
               <div
                 key={step.label}
-                className="flex flex-col md:flex-row items-center gap-0"
+                className="flex flex-col md:flex-row items-center md:items-start gap-0"
               >
                 <motion.div
                   {...staggerChild}
@@ -110,7 +110,7 @@ export default function Workflow() {
 
                 {/* Connector */}
                 {i < steps.length - 1 && (
-                  <div className="md:mx-2 my-2 md:my-0">
+                  <div className="md:mx-2 my-2 md:my-0 md:mt-7">
                     <ConnectorLine color={step.color} />
                   </div>
                 )}
