@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     description:
       'AI meeting intelligence for Google Meet. Record, transcribe, detect keywords, track analytics, and update your CRM. Free forever.',
   },
+  verification: {
+    google: '_t6Op_k_gq3lokErsqVMRah_yFFRPRmu_YHTkhoYQWU',
+  },
 };
 
 export default function RootLayout({
