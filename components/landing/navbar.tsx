@@ -6,8 +6,10 @@ import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { label: 'Features', href: '/#features' },
+  { label: 'Use Cases', href: '/use-cases' },
   { label: 'Pricing', href: '/#pricing' },
-  { label: 'Compare', href: '/#compare' },
+  { label: 'Compare', href: '/compare' },
+  { label: 'Blog', href: '/blog' },
 ];
 
 const fadeUp = {

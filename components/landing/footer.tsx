@@ -18,23 +18,39 @@ const columns: FooterColumn[] = [
     links: [
       { label: 'Features', href: '/#features' },
       { label: 'Pricing', href: '/#pricing' },
-      { label: 'Compare', href: '/#compare' },
       { label: 'Changelog', href: '/changelog' },
+      { label: 'Roadmap', href: '/roadmap' },
+    ],
+  },
+  {
+    title: 'Solutions',
+    links: [
+      { label: 'Use Cases', href: '/use-cases' },
+      { label: 'Sales Teams', href: '/use-cases/sales-teams' },
+      { label: 'Product Managers', href: '/use-cases/product-managers' },
+      { label: 'Compare', href: '/compare' },
+    ],
+  },
+  {
+    title: 'Resources',
+    links: [
+      { label: 'Blog', href: '/blog' },
+      { label: 'Help Center', href: '/help' },
+      { label: 'Feedback', href: '/feedback' },
+    ],
+  },
+  {
+    title: 'Company',
+    links: [
+      { label: 'Contact', href: '/contact' },
     ],
   },
   {
     title: 'Legal',
     links: [
-      { label: 'Privacy', href: '/privacy' },
-      { label: 'Terms', href: '/terms' },
+      { label: 'Privacy Policy', href: '/privacy' },
+      { label: 'Terms of Service', href: '/terms' },
       { label: 'Security', href: '/security' },
-    ],
-  },
-  {
-    title: 'Support',
-    links: [
-      { label: 'Help Center', href: '/help' },
-      { label: 'Contact', href: '/contact' },
     ],
   },
 ];

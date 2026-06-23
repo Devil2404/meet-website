@@ -11,6 +11,7 @@ import CrmAutomation from "@/components/landing/crm-automation";
 import Comparison from "@/components/landing/comparison";
 import Testimonials from "@/components/landing/testimonials";
 import Pricing from "@/components/landing/pricing";
+import HomepageFaq from "@/components/landing/faq";
 import FinalCta from "@/components/landing/final-cta";
 import Footer from "@/components/landing/footer";
 
@@ -37,6 +38,8 @@ export default function Home() {
       <Testimonials />
       <div className="section-divider" />
       <Pricing />
+      <div className="section-divider" />
+      <HomepageFaq />
       <div className="section-divider" />
       <FinalCta />
       <Footer />
