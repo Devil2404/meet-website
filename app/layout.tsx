@@ -1,11 +1,5 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.tryvoxa.app'),
@@ -98,7 +92,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} font-sans antialiased bg-voxa-bg text-white`}
+        className="font-sans antialiased bg-voxa-bg text-white"
       >
         {children}
       </body>

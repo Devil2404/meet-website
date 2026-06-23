@@ -5,7 +5,7 @@ import CtaBanner from '@/components/seo/cta-banner';
 import FaqSection from '@/components/seo/faq-section';
 
 export const metadata: Metadata = {
-  title: 'Meeting Transcript vs Meeting Notes — What's the Difference? | Voxa',
+  title: "Meeting Transcript vs Meeting Notes - What's the Difference? | Voxa",
   description:
     'Understand the key differences between a meeting transcript and meeting notes. Learn when to use each, how they complement one another, and how Voxa gives you both automatically.',
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'meeting transcription tool',
   ],
   openGraph: {
-    title: 'Meeting Transcript vs Meeting Notes — What's the Difference?',
+    title: "Meeting Transcript vs Meeting Notes - What's the Difference?",
     description:
       'A comprehensive guide explaining the difference between meeting transcripts and meeting notes, when to use each, and how to get both automatically with Voxa.',
     url: 'https://www.tryvoxa.app/blog/meeting-transcript-vs-meeting-notes',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Meeting Transcript vs Meeting Notes — What's the Difference?',
+    title: "Meeting Transcript vs Meeting Notes - What's the Difference?",
     description:
       'Learn the difference between meeting transcripts and meeting notes, plus how Voxa generates both automatically in Google Meet.',
   },
@@ -74,7 +74,7 @@ export default function MeetingTranscriptVsNotesPage() {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Meeting Transcript vs Meeting Notes — What's the Difference?',
+    headline: "Meeting Transcript vs Meeting Notes - What's the Difference?",
     description:
       'A comprehensive guide explaining the key differences between meeting transcripts and meeting notes, when to use each format, and how to get both automatically.',
     author: {
@@ -551,3 +551,4 @@ export default function MeetingTranscriptVsNotesPage() {
     </PageLayout>
   );
 }
+
