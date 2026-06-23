@@ -60,7 +60,7 @@ export default function Navbar() {
         {/* Right — CTA + Mobile Toggle */}
         <div className="flex items-center gap-4">
           <a
-            href="#"
+            href="https://chromewebstore.google.com/detail/voxa-record-transcribe-go/llbjaleeiopcakodaigfpfoijliachji"
             className="hidden md:inline-flex relative overflow-hidden group bg-white text-voxa-bg text-sm font-medium px-4 py-2 rounded-lg hover:bg-white/90 transition-colors"
           >
             <span className="relative z-10">Add to Chrome</span>
@@ -106,7 +106,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="#"
+                href="https://chromewebstore.google.com/detail/voxa-record-transcribe-go/llbjaleeiopcakodaigfpfoijliachji"
                 className="mt-2 inline-flex justify-center bg-white text-voxa-bg text-sm font-medium px-4 py-2.5 rounded-lg hover:bg-white/90 transition-colors"
               >
                 Add to Chrome

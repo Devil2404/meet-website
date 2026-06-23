@@ -293,7 +293,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10"
           >
             <motion.a
-              href="#"
+              href="https://chromewebstore.google.com/detail/voxa-record-transcribe-go/llbjaleeiopcakodaigfpfoijliachji"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="px-7 py-3.5 rounded-xl bg-gradient-to-r from-voxa-purple to-voxa-indigo text-white font-medium text-base relative overflow-hidden"

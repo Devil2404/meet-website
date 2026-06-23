@@ -60,7 +60,7 @@ export default function SecurityPage() {
         <section className="mb-10">
           <h2 className="text-2xl font-semibold mb-4 text-white">4. Reporting Vulnerabilities</h2>
           <p className="mb-4 text-white/70 leading-relaxed">
-            If you believe you have found a security vulnerability in Voxa, we encourage you to report it to us immediately at <a href="mailto:security@tryvoxa.app" className="text-voxa-purple hover:underline">security@tryvoxa.app</a>. We ask that you do not disclose the vulnerability publicly until we have had an opportunity to address it.
+            If you believe you have found a security vulnerability in Voxa, we encourage you to report it to us immediately at <a href="mailto:support@tryvoxa.app" className="text-voxa-purple hover:underline">support@tryvoxa.app</a>. We ask that you do not disclose the vulnerability publicly until we have had an opportunity to address it.
           </p>
         </section>
       </div>
