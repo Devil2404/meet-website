@@ -1,3 +1,5 @@
+import { GraduationCap, Rocket, Mic, AlertTriangle, Trophy, Monitor, Clapperboard, Clock, Briefcase } from 'lucide-react';
+
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageLayout from '@/components/seo/page-layout';
@@ -5,6 +7,9 @@ import CtaBanner from '@/components/seo/cta-banner';
 import FaqSection from '@/components/seo/faq-section';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/record-google-meet-without-workspace',
+  },
   title: 'How to Record Google Meet Without Google Workspace (2026) | Voxa',
   description:
     'Learn how to record Google Meet without a Google Workspace subscription. 3 proven methods: Voxa extension, screen recording, and OBS — step-by-step guide.',

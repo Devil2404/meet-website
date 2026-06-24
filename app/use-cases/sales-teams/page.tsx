@@ -5,6 +5,9 @@ import FaqSection from '@/components/seo/faq-section';
 import { Target, CheckCircle2, TrendingUp } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/use-cases/sales-teams',
+  },
   title: 'Google Meet Recorder for Sales Teams — Voxa',
   description: 'The best Google Meet recorder for sales. Automate sales meeting notes, track action items, and sync directly to your CRM. Free forever.',
   keywords: ['google meet recorder for sales', 'sales meeting notes', 'sales call recording', 'CRM automation for meetings'],

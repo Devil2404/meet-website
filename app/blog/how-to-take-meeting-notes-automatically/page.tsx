@@ -1,3 +1,5 @@
+import { XCircle, CheckCircle2, AlertTriangle } from 'lucide-react';
+
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageLayout from '@/components/seo/page-layout';
@@ -5,6 +7,9 @@ import CtaBanner from '@/components/seo/cta-banner';
 import FaqSection from '@/components/seo/faq-section';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/how-to-take-meeting-notes-automatically',
+  },
   title: 'How to Take Meeting Notes Automatically (5 Methods Compared) | Voxa',
   description:
     'Learn how to take meeting notes automatically using AI tools, built-in features, and smart workflows. Compare 5 methods with pros, cons, and step-by-step setup guides.',

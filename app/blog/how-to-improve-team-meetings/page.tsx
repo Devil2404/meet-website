@@ -1,3 +1,5 @@
+import { ClipboardList, XCircle, CheckCircle2, Pin, Target } from 'lucide-react';
+
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageLayout from '@/components/seo/page-layout';
@@ -5,6 +7,9 @@ import CtaBanner from '@/components/seo/cta-banner';
 import FaqSection from '@/components/seo/faq-section';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/how-to-improve-team-meetings',
+  },
   title: 'How to Improve Team Meetings — 10 Proven Strategies for 2026',
   description:
     'Learn 10 actionable strategies to improve team meetings. From setting agendas to automating notes with AI, discover how to make every meeting count.',

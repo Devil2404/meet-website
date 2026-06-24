@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Check, X } from 'lucide-react';
+import Image from 'next/image';
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
@@ -78,7 +79,7 @@ export default function Comparison() {
               </th>
               <th className="p-4 text-center relative bg-voxa-purple/5" style={{ boxShadow: '0 0 30px rgba(123,92,245,0.08) inset' }}>
                 <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-voxa-purple to-voxa-indigo" />
-                <img src="/logo.png" alt="Voxa" className="h-5 w-auto mx-auto" />
+                <Image src="/logo.png" alt="Voxa" width={80} height={30} className="h-5 w-auto mx-auto" />
               </th>
               <th className="p-4 text-center text-sm font-medium text-white/40">
                 tl;dv

@@ -5,6 +5,9 @@ import ComparisonTable from '@/components/seo/comparison-table';
 import { CheckCircle2, MinusCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/compare/fireflies-vs-voxa',
+  },
   title: 'Fireflies.ai vs Voxa — Best AI Meeting Assistant',
   description: 'Compare Fireflies.ai against Voxa. See how a native Google Meet extension compares to a meeting bot, and which is right for your team.',
   keywords: ['fireflies vs voxa', 'fireflies alternative', 'fireflies.ai alternative', 'meeting bot alternative'],

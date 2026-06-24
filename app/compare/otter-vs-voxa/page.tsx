@@ -5,6 +5,9 @@ import ComparisonTable from '@/components/seo/comparison-table';
 import { CheckCircle2, MinusCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/compare/otter-vs-voxa',
+  },
   title: 'Otter.ai vs Voxa — Best Transcription Tool',
   description: 'Compare Otter.ai and Voxa. See which tool offers the best transcription, meeting notes, and value for Google Meet users.',
   keywords: ['otter vs voxa', 'otter.ai alternative', 'best transcription software', 'otter pilot alternative'],

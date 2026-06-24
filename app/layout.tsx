@@ -1,11 +1,12 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import HashRedirect from '@/components/hash-redirect';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.tryvoxa.app'),
   title: 'Voxa — Never take meeting notes again',
   description:
-    'Voxa is an AI meeting intelligence platform for Google Meet. Record, transcribe, detect smart keywords, track speaker analytics, generate action items, and update your CRM automatically. Free forever.',
+    'Voxa is a Google Meet recorder with live transcripts, meeting notes, attendance tracking, speaker analytics, and action item management. Free Chrome extension.',
   keywords: [
     'meeting recorder',
     'Google Meet',
@@ -18,6 +19,14 @@ export const metadata: Metadata = {
     'action items',
     'meeting intelligence',
   ],
+  alternates: {
+    canonical: '/',
+  },
+  icons: {
+    icon: '/icon.png',
+    shortcut: '/icon.png',
+    apple: '/icon.png',
+  },
   openGraph: {
     title: 'Voxa — Never take meeting notes again',
     description:
@@ -67,8 +76,8 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: 'Voxa',
-    operatingSystem: 'Chrome OS, Windows, macOS, Linux',
-    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Chrome',
+    applicationCategory: 'ProductivityApplication',
     offers: {
       '@type': 'Offer',
       price: '0',
@@ -94,6 +103,7 @@ export default function RootLayout({
       <body
         className="font-sans antialiased bg-voxa-bg text-white"
       >
+        <HashRedirect />
         {children}
       </body>
     </html>

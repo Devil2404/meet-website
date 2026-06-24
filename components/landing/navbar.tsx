@@ -3,9 +3,10 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const navLinks = [
-  { label: 'Features', href: '/#features' },
+  { label: 'Features', href: '/features' },
   { label: 'Use Cases', href: '/use-cases' },
   { label: 'Pricing', href: '/#pricing' },
   { label: 'Compare', href: '/compare' },
@@ -43,7 +44,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto h-full flex items-center justify-between px-6">
         {/* Logo */}
         <a href="/" className="inline-block">
-          <img src="/logo.png" alt="Voxa Logo" className="w-[115px] h-auto" />
+          <Image src="/logo.png" alt="Voxa Logo" width={115} height={43} className="brightness-150" priority />
         </a>
 
         {/* Center Nav Links — Desktop */}

@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/compare',
+  },
   title: 'Compare Voxa Alternatives — Best AI Meeting Recorders',
   description: 'Compare Voxa against other AI meeting recorders like tl;dv, Scribbl, Fireflies, and Otter. Find the best tool for your Google Meet recordings.',
 };

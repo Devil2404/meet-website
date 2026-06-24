@@ -3,6 +3,9 @@ import Navbar from '@/components/landing/navbar';
 import Footer from '@/components/landing/footer';
 
 export const metadata = {
+  alternates: {
+    canonical: '/terms',
+  },
   title: 'Terms of Service - Voxa',
   description: 'Voxa Terms of Service',
 };

@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { Users, Briefcase, Code, Rocket, GraduationCap } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/use-cases',
+  },
   title: 'Voxa Use Cases — AI Meeting Notes for Every Role',
   description: 'See how Voxa helps sales teams, product managers, engineers, startups, and students automate their meeting notes and focus on the conversation.',
 };

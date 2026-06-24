@@ -3,6 +3,9 @@ import Navbar from '@/components/landing/navbar';
 import Footer from '@/components/landing/footer';
 
 export const metadata = {
+  alternates: {
+    canonical: '/contact',
+  },
   title: 'Contact Us - Voxa',
   description: 'Contact the Voxa team',
 };

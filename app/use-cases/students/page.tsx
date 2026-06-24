@@ -5,6 +5,9 @@ import FaqSection from '@/components/seo/faq-section';
 import { GraduationCap, CheckCircle2, Search } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/use-cases/students',
+  },
   title: 'Google Meet Recorder for Students — Voxa',
   description: 'Record online classes and lectures on Google Meet. Get searchable transcripts and focus on learning instead of taking notes. Free for students.',
   keywords: ['google meet recorder for students', 'lecture recording', 'class notes AI', 'study group recorder'],

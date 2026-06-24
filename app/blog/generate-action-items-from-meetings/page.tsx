@@ -1,3 +1,5 @@
+import { XCircle, CheckCircle2 } from 'lucide-react';
+
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageLayout from '@/components/seo/page-layout';
@@ -6,6 +8,9 @@ import ComparisonTable from '@/components/seo/comparison-table';
 import FaqSection from '@/components/seo/faq-section';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/generate-action-items-from-meetings',
+  },
   title: 'How to Generate Action Items from Meetings Automatically | Voxa',
   description:
     'Learn how to automatically extract and track action items from meetings using AI. Step-by-step guide with Voxa, examples of good vs bad action items, and tool comparisons.',

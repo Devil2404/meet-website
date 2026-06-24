@@ -282,9 +282,9 @@ export default function Hero() {
           {/* Subheadline */}
           <motion.p
             {...staggerChild}
-            className="text-xl text-white/40 max-w-2xl mx-auto text-center mt-6"
+            className="text-xl text-white/40 max-w-3xl mx-auto text-center mt-6"
           >
-            Voxa listens, understands, highlights what matters, and updates your CRM automatically.
+            Record Google Meet in HD, generate live transcripts, track attendance, capture action items, and export professional meeting notes—all in one powerful free extension.
           </motion.p>
 
           {/* CTA Buttons */}

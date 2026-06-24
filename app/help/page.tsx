@@ -3,6 +3,9 @@ import Navbar from '@/components/landing/navbar';
 import Footer from '@/components/landing/footer';
 
 export const metadata = {
+  alternates: {
+    canonical: '/help',
+  },
   title: 'Help Center - Voxa',
   description: 'Voxa Help Center',
 };

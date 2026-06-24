@@ -5,6 +5,9 @@ import ComparisonTable from '@/components/seo/comparison-table';
 import { CheckCircle2, MinusCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/compare/tldv-vs-voxa',
+  },
   title: 'tl;dv vs Voxa — Best Google Meet Recorder Alternative',
   description: 'Compare tl;dv and Voxa for Google Meet recording. See feature differences, pricing, and why teams are choosing Voxa as the best tl;dv alternative.',
   keywords: ['tldv vs voxa', 'tldv alternative', 'best google meet recorder', 'tldv pricing'],

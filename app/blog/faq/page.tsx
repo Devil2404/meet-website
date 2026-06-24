@@ -4,6 +4,9 @@ import FaqSection from '@/components/seo/faq-section';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/faq',
+  },
   title: 'Voxa FAQ — All Your Google Meet Recording Questions Answered',
   description: 'Find answers to 50+ frequently asked questions about Voxa, Google Meet recording, transcription, speaker analytics, attendance tracking, and meeting productivity.',
   keywords: [

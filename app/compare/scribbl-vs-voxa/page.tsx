@@ -5,6 +5,9 @@ import ComparisonTable from '@/components/seo/comparison-table';
 import { CheckCircle2, MinusCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/compare/scribbl-vs-voxa',
+  },
   title: 'Scribbl vs Voxa — Best Google Meet Transcriber',
   description: 'Compare Scribbl and Voxa. See why teams prefer Voxa for superior speaker analytics, free CRM integration, and accurate Google Meet transcripts.',
   keywords: ['scribbl vs voxa', 'scribbl alternative', 'google meet transcription', 'free transcription tool'],

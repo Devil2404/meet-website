@@ -1,3 +1,5 @@
+import { AlertTriangle, Lightbulb } from 'lucide-react';
+
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageLayout from '@/components/seo/page-layout';
@@ -6,6 +8,9 @@ import ComparisonTable from '@/components/seo/comparison-table';
 import FaqSection from '@/components/seo/faq-section';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/track-attendance-google-meet',
+  },
   title: 'How to Track Attendance in Google Meet (3 Easy Methods) | Voxa',
   description:
     'Learn how to track attendance in Google Meet using Voxa, Google Workspace admin reports, or manual tracking. Step-by-step guide with comparison of all methods.',

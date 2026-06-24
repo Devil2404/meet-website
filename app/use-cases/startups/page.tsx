@@ -5,6 +5,9 @@ import FaqSection from '@/components/seo/faq-section';
 import { Rocket, CheckCircle2, Zap } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/use-cases/startups',
+  },
   title: 'Free Meeting Recorder for Startups — Voxa',
   description: 'The best free meeting recorder for lean startups. Capture investor meetings, team standups, and customer discovery calls. Free forever.',
   keywords: ['free meeting recorder', 'startup meeting notes', 'investor meeting recording', 'lean team tools'],

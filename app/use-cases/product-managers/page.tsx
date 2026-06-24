@@ -5,6 +5,9 @@ import FaqSection from '@/components/seo/faq-section';
 import { Lightbulb, CheckCircle2, MessageSquare } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/use-cases/product-managers',
+  },
   title: 'Meeting Notes for Product Managers — Voxa',
   description: 'The ultimate product meeting recorder. Capture user feedback, document feature decisions, and keep engineering aligned with AI meeting notes.',
   keywords: ['meeting notes for product managers', 'product meeting recorder', 'product management AI assistant', 'user interview recorder'],

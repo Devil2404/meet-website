@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { ArrowRight, BookOpen, HelpCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog',
+  },
   title: 'Voxa Blog — Google Meet Recording, Transcription & Productivity',
   description: 'Comprehensive guides on Google Meet recording, meeting transcription, speaker analytics, meeting productivity, and AI note-taking. Expert tips from the Voxa team.',
   keywords: ['meeting productivity blog', 'google meet tips', 'ai meeting assistant news', 'google meet recorder guide', 'meeting transcription tips'],

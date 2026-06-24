@@ -3,6 +3,9 @@ import Navbar from '@/components/landing/navbar';
 import Footer from '@/components/landing/footer';
 
 export const metadata = {
+  alternates: {
+    canonical: '/privacy',
+  },
   title: 'Privacy Policy - Voxa',
   description: 'Voxa Privacy Policy',
 };

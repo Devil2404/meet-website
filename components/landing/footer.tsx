@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface FooterLink {
   label: string;
@@ -16,7 +17,7 @@ const columns: FooterColumn[] = [
   {
     title: 'Product',
     links: [
-      { label: 'Features', href: '/#features' },
+      { label: 'Features', href: '/features' },
       { label: 'Pricing', href: '/#pricing' },
       { label: 'Changelog', href: '/changelog' },
       { label: 'Roadmap', href: '/roadmap' },
@@ -63,7 +64,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
             <a href="/" className="inline-block">
-              <img src="/logo.png" alt="Voxa Logo" className="w-[115px] h-auto" />
+              <Image src="/logo.png" alt="Voxa Logo" width={115} height={43} className="brightness-150" />
             </a>
             <p className="text-white/30 text-sm mt-4 max-w-xs">
               AI meeting intelligence for Google Meet. Free forever.

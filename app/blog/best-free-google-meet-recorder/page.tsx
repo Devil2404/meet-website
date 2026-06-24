@@ -1,3 +1,5 @@
+import { Phone, GraduationCap, Rocket, Globe } from 'lucide-react';
+
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageLayout from '@/components/seo/page-layout';
@@ -6,6 +8,9 @@ import ComparisonTable from '@/components/seo/comparison-table';
 import FaqSection from '@/components/seo/faq-section';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/best-free-google-meet-recorder',
+  },
   title: 'Best Free Google Meet Recorder in 2026 — Top 5 Compared | Voxa',
   description:
     'Looking for the best free Google Meet recorder in 2026? We compare Voxa, tl;dv, Scribbl, Fireflies, and Otter on features, pricing, and ease of use.',

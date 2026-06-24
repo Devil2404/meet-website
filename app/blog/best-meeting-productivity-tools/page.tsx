@@ -1,3 +1,5 @@
+import { GraduationCap, Rocket, Mic, ClipboardList, MessageSquare, Calendar, Palette, Settings, BarChart } from 'lucide-react';
+
 import { Metadata } from 'next';
 import Link from 'next/link';
 import PageLayout from '@/components/seo/page-layout';
@@ -6,6 +8,9 @@ import ComparisonTable from '@/components/seo/comparison-table';
 import FaqSection from '@/components/seo/faq-section';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/best-meeting-productivity-tools',
+  },
   title: 'Best Meeting Productivity Tools in 2026 — The Definitive Guide',
   description:
     'Discover the 8 best meeting productivity tools in 2026. Compare Voxa, Notion, Asana, Slack, Google Calendar, Fellow, Loom, and Miro across categories to build your ideal meeting stack.',

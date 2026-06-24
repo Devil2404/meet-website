@@ -3,6 +3,9 @@ import Navbar from '@/components/landing/navbar';
 import Footer from '@/components/landing/footer';
 
 export const metadata = {
+  alternates: {
+    canonical: '/security',
+  },
   title: 'Security - Voxa',
   description: 'Voxa Security Practices',
 };

@@ -1,22 +1,53 @@
 import { MetadataRoute } from 'next';
+import fs from 'fs';
+import path from 'path';
+
+function getDynamicRoutes(baseUrl: string, folderName: string, priority: number): MetadataRoute.Sitemap {
+  const targetDir = path.join(process.cwd(), 'app', folderName);
+  let routes: MetadataRoute.Sitemap = [];
+
+  try {
+    if (fs.existsSync(targetDir)) {
+      // Add the index page for this section (e.g. /blog, /use-cases)
+      routes.push({
+        url: `${baseUrl}/${folderName}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: priority,
+      });
+
+      // Get all subdirectories (e.g. individual blog posts)
+      const subDirs = fs.readdirSync(targetDir, { withFileTypes: true })
+        .filter((dirent) => dirent.isDirectory())
+        .map((dirent) => dirent.name);
+
+      const subRoutes = subDirs.map((slug) => ({
+        url: `${baseUrl}/${folderName}/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: priority,
+      }));
+
+      routes = [...routes, ...subRoutes];
+    }
+  } catch (e) {
+    console.error(`Error reading ${folderName} directory`, e);
+  }
+
+  return routes;
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.tryvoxa.app';
 
-  // Base routes
+  // Base routes as requested
   const routes = [
     '',
-    '/pricing',
-    '/changelog',
-    '/help',
-    '/contact',
-    '/privacy',
-    '/terms',
-    '/security',
+    '/features',
+    '/roadmap',
     '/feedback',
-    '/use-cases',
-    '/compare',
-    '/blog',
+    '/privacy',
+    '/contact',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -24,53 +55,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1 : 0.8,
   }));
 
-  // Use case routes
-  const useCases = [
-    '/sales-teams',
-    '/product-managers',
-    '/engineering-teams',
-    '/startups',
-    '/students',
-  ].map((route) => ({
-    url: `${baseUrl}/use-cases${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }));
+  // Dynamically get articles, use-cases, and comparisons
+  const blogRoutes = getDynamicRoutes(baseUrl, 'blog', 0.7);
+  const useCaseRoutes = getDynamicRoutes(baseUrl, 'use-cases', 0.8);
+  const compareRoutes = getDynamicRoutes(baseUrl, 'compare', 0.8);
 
-  // Comparison routes
-  const comparisons = [
-    '/tldv-vs-voxa',
-    '/scribbl-vs-voxa',
-    '/fireflies-vs-voxa',
-    '/otter-vs-voxa',
-  ].map((route) => ({
-    url: `${baseUrl}/compare${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }));
-
-  // Blog article routes
-  const blogArticles = [
-    '/best-free-google-meet-recorder',
-    '/record-google-meet-without-workspace',
-    '/best-tldv-alternative',
-    '/best-scribbl-alternative',
-    '/how-to-take-meeting-notes-automatically',
-    '/generate-action-items-from-meetings',
-    '/meeting-transcript-vs-meeting-notes',
-    '/track-attendance-google-meet',
-    '/best-meeting-productivity-tools',
-    '/how-to-improve-team-meetings',
-    '/faq',
-  ].map((route) => ({
-    url: `${baseUrl}/blog${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }));
-
-  return [...routes, ...useCases, ...comparisons, ...blogArticles];
+  return [...routes, ...blogRoutes, ...useCaseRoutes, ...compareRoutes];
 }
 

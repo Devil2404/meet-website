@@ -5,6 +5,9 @@ import FaqSection from '@/components/seo/faq-section';
 import { Terminal, CheckCircle2, GitBranch } from 'lucide-react';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/use-cases/engineering-teams',
+  },
   title: 'Engineering Standup Recorder — Voxa',
   description: 'Record daily standups, sprint planning, and architecture reviews. Voxa captures technical discussions and action items automatically.',
   keywords: ['engineering standup recorder', 'sprint meeting notes', 'developer meeting notes', 'technical meeting recorder'],

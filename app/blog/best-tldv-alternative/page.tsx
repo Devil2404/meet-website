@@ -6,6 +6,9 @@ import ComparisonTable from '@/components/seo/comparison-table';
 import FaqSection from '@/components/seo/faq-section';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/best-tldv-alternative',
+  },
   title: 'Best tl;dv Alternative in 2026 — Free Google Meet Recorder | Voxa',
   description:
     'Looking for the best tl;dv alternative? Voxa is a 100% free Google Meet recorder with HD recording, live transcription, speaker analytics, and no bot joining your calls.',

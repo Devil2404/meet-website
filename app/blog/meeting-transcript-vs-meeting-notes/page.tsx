@@ -5,6 +5,9 @@ import CtaBanner from '@/components/seo/cta-banner';
 import FaqSection from '@/components/seo/faq-section';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/meeting-transcript-vs-meeting-notes',
+  },
   title: "Meeting Transcript vs Meeting Notes - What's the Difference? | Voxa",
   description:
     'Understand the key differences between a meeting transcript and meeting notes. Learn when to use each, how they complement one another, and how Voxa gives you both automatically.',

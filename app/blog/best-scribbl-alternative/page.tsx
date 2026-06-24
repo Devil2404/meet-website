@@ -6,6 +6,9 @@ import ComparisonTable from '@/components/seo/comparison-table';
 import FaqSection from '@/components/seo/faq-section';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/blog/best-scribbl-alternative',
+  },
   title: 'Best Scribbl Alternative in 2026 — Free Google Meet Recorder | Voxa',
   description:
     'Looking for the best Scribbl alternative? Voxa is a 100% free Google Meet recorder with speaker analytics, attendance tracking, decision tracking, and HD recording.',

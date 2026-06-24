@@ -1,0 +1,24 @@
+import Navbar from '@/components/landing/navbar';
+import FeaturesComponent from '@/components/landing/features';
+import Footer from '@/components/landing/footer';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Features | Voxa',
+  description: 'Explore the powerful features of Voxa: AI Meeting Intelligence, Auto-Transcription, Smart Markers, CRM Sync, and more.',
+  alternates: {
+    canonical: '/features',
+  },
+};
+
+export default function FeaturesPage() {
+  return (
+    <main className="min-h-screen bg-voxa-bg">
+      <Navbar />
+      <div className="pt-16">
+        <FeaturesComponent />
+      </div>
+      <Footer />
+    </main>
+  );
+}
