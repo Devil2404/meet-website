@@ -9,6 +9,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/roadmap',
   },
+  openGraph: {
+    title: 'Roadmap | Voxa',
+    description: 'See what we are building next at Voxa. Explore our product roadmap, recent releases, and upcoming features.',
+    url: 'https://www.tryvoxa.app/roadmap',
+    siteName: 'Voxa',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Voxa Roadmap' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Roadmap | Voxa',
+    description: 'See what we are building next at Voxa. Explore our product roadmap, recent releases, and upcoming features.',
+    images: ['/og-image.png'],
+  },
 };
 
 const roadmapItems = [

@@ -3,11 +3,25 @@ import Navbar from '@/components/landing/navbar';
 import Footer from '@/components/landing/footer';
 
 export const metadata = {
+  title: 'Terms of Service - Voxa',
+  description: 'Read the Voxa Terms of Service. Understand the rules, guidelines, and agreements for using our AI meeting intelligence platform.',
   alternates: {
     canonical: '/terms',
   },
-  title: 'Terms of Service - Voxa',
-  description: 'Voxa Terms of Service',
+  openGraph: {
+    title: 'Terms of Service - Voxa',
+    description: 'Read the Voxa Terms of Service. Understand the rules, guidelines, and agreements for using our AI meeting intelligence platform.',
+    url: 'https://www.tryvoxa.app/terms',
+    siteName: 'Voxa',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Voxa Terms of Service' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms of Service - Voxa',
+    description: 'Read the Voxa Terms of Service. Understand the rules, guidelines, and agreements for using our AI meeting intelligence platform.',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function TermsPage() {

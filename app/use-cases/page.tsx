@@ -4,11 +4,25 @@ import Link from 'next/link';
 import { Users, Briefcase, Code, Rocket, GraduationCap } from 'lucide-react';
 
 export const metadata: Metadata = {
+  title: 'Voxa Use Cases — AI Meeting Notes for Every Role',
+  description: 'See how Voxa helps sales teams, product managers, engineers, startups, and students automate their meeting notes and focus on the conversation.',
   alternates: {
     canonical: '/use-cases',
   },
-  title: 'Voxa Use Cases — AI Meeting Notes for Every Role',
-  description: 'See how Voxa helps sales teams, product managers, engineers, startups, and students automate their meeting notes and focus on the conversation.',
+  openGraph: {
+    title: 'Voxa Use Cases — AI Meeting Notes for Every Role',
+    description: 'See how Voxa helps sales teams, product managers, engineers, startups, and students automate their meeting notes and focus on the conversation.',
+    url: 'https://www.tryvoxa.app/use-cases',
+    siteName: 'Voxa',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Voxa Use Cases' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Voxa Use Cases — AI Meeting Notes for Every Role',
+    description: 'See how Voxa helps sales teams, product managers, engineers, startups, and students automate their meeting notes and focus on the conversation.',
+    images: ['/og-image.png'],
+  },
 };
 
 const useCases = [

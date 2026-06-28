@@ -4,17 +4,25 @@ import Link from 'next/link';
 import { ArrowRight, BookOpen, HelpCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  alternates: {
-    canonical: '/blog',
-  },
   title: 'Voxa Blog — Google Meet Recording, Transcription & Productivity',
   description: 'Comprehensive guides on Google Meet recording, meeting transcription, speaker analytics, meeting productivity, and AI note-taking. Expert tips from the Voxa team.',
   keywords: ['meeting productivity blog', 'google meet tips', 'ai meeting assistant news', 'google meet recorder guide', 'meeting transcription tips'],
+  alternates: {
+    canonical: '/blog',
+  },
   openGraph: {
     title: 'Voxa Blog — Google Meet Recording, Transcription & Productivity',
     description: 'Expert guides on meeting recording, AI transcription, and productivity tools for Google Meet.',
-    type: 'website',
     url: 'https://www.tryvoxa.app/blog',
+    siteName: 'Voxa',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Voxa Blog' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Voxa Blog — Google Meet Recording, Transcription & Productivity',
+    description: 'Expert guides on meeting recording, AI transcription, and productivity tools for Google Meet.',
+    images: ['/og-image.png'],
   },
 };
 

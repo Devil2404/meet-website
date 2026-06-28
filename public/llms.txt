@@ -1,0 +1,20 @@
+﻿# Voxa - AI Meeting Intelligence
+
+Voxa is a Google Meet recorder with live transcripts, meeting notes, attendance tracking, speaker analytics, and action item management. It is a free Chrome extension.
+
+## Key Features
+- Live Transcript: Real-time transcription with speaker identification.
+- AI Summary: Structured summaries, key topics, decisions, and next steps.
+- Smart Markers: Automatic tagging of critical mentions (budgets, competitors, deadlines).
+- Action Items: Extracted from conversation and assigned with due dates.
+- Speaker Analytics: Talk-time breakdowns, interruption tracking.
+- CRM Sync: Integration with Salesforce and HubSpot.
+
+## Important Links
+- Home: https://www.tryvoxa.app/
+- Features: https://www.tryvoxa.app/features
+- Compare: https://www.tryvoxa.app/compare
+- Use Cases: https://www.tryvoxa.app/use-cases
+- Blog: https://www.tryvoxa.app/blog
+- Pricing: Free forever (https://www.tryvoxa.app/#pricing)
+

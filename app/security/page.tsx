@@ -3,11 +3,25 @@ import Navbar from '@/components/landing/navbar';
 import Footer from '@/components/landing/footer';
 
 export const metadata = {
+  title: 'Security - Voxa',
+  description: 'Learn about Voxa\'s security practices. Discover how we keep your meeting data safe, secure, and private with enterprise-grade protection.',
   alternates: {
     canonical: '/security',
   },
-  title: 'Security - Voxa',
-  description: 'Voxa Security Practices',
+  openGraph: {
+    title: 'Security - Voxa',
+    description: 'Learn about Voxa\'s security practices. Discover how we keep your meeting data safe, secure, and private with enterprise-grade protection.',
+    url: 'https://www.tryvoxa.app/security',
+    siteName: 'Voxa',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Voxa Security' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Security - Voxa',
+    description: 'Learn about Voxa\'s security practices. Discover how we keep your meeting data safe, secure, and private with enterprise-grade protection.',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function SecurityPage() {

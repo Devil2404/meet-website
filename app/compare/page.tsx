@@ -4,11 +4,25 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
+  title: 'Compare Voxa Alternatives — Best AI Meeting Recorders',
+  description: 'Compare Voxa against other AI meeting recorders like tl;dv, Scribbl, Fireflies, and Otter. Find the best tool for your Google Meet recordings.',
   alternates: {
     canonical: '/compare',
   },
-  title: 'Compare Voxa Alternatives — Best AI Meeting Recorders',
-  description: 'Compare Voxa against other AI meeting recorders like tl;dv, Scribbl, Fireflies, and Otter. Find the best tool for your Google Meet recordings.',
+  openGraph: {
+    title: 'Compare Voxa Alternatives — Best AI Meeting Recorders',
+    description: 'Compare Voxa against other AI meeting recorders like tl;dv, Scribbl, Fireflies, and Otter. Find the best tool for your Google Meet recordings.',
+    url: 'https://www.tryvoxa.app/compare',
+    siteName: 'Voxa',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Compare Voxa' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Compare Voxa Alternatives — Best AI Meeting Recorders',
+    description: 'Compare Voxa against other AI meeting recorders like tl;dv, Scribbl, Fireflies, and Otter. Find the best tool for your Google Meet recordings.',
+    images: ['/og-image.png'],
+  },
 };
 
 const comparisons = [

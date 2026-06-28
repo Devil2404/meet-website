@@ -3,11 +3,25 @@ import Navbar from '@/components/landing/navbar';
 import Footer from '@/components/landing/footer';
 
 export const metadata = {
+  title: 'Privacy Policy - Voxa',
+  description: 'Learn how Voxa protects your privacy. Read our privacy policy to understand our data collection, security measures, and commitment to your data privacy.',
   alternates: {
     canonical: '/privacy',
   },
-  title: 'Privacy Policy - Voxa',
-  description: 'Voxa Privacy Policy',
+  openGraph: {
+    title: 'Privacy Policy - Voxa',
+    description: 'Learn how Voxa protects your privacy. Read our privacy policy to understand our data collection, security measures, and commitment to your data privacy.',
+    url: 'https://www.tryvoxa.app/privacy',
+    siteName: 'Voxa',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Voxa Privacy Policy' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy - Voxa',
+    description: 'Learn how Voxa protects your privacy. Read our privacy policy to understand our data collection, security measures, and commitment to your data privacy.',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function PrivacyPage() {

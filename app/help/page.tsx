@@ -3,11 +3,25 @@ import Navbar from '@/components/landing/navbar';
 import Footer from '@/components/landing/footer';
 
 export const metadata = {
+  title: 'Help Center - Voxa',
+  description: 'Find answers, tutorials, and support for using Voxa. Learn how to record Google Meet, use AI summaries, and set up your CRM integration.',
   alternates: {
     canonical: '/help',
   },
-  title: 'Help Center - Voxa',
-  description: 'Voxa Help Center',
+  openGraph: {
+    title: 'Help Center - Voxa',
+    description: 'Find answers, tutorials, and support for using Voxa. Learn how to record Google Meet, use AI summaries, and set up your CRM integration.',
+    url: 'https://www.tryvoxa.app/help',
+    siteName: 'Voxa',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Voxa Help Center' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Help Center - Voxa',
+    description: 'Find answers, tutorials, and support for using Voxa. Learn how to record Google Meet, use AI summaries, and set up your CRM integration.',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function HelpPage() {

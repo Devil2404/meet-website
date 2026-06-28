@@ -1,0 +1,44 @@
+﻿# Voxa - Full Context for AI
+
+Voxa is a powerful AI meeting intelligence tool designed exclusively for Google Meet. It operates as a free Chrome extension, requiring no meeting bots to join your calls.
+
+## Detailed Capabilities
+
+### Recording & Transcription
+- HD Meeting Recording
+- Live Transcription (99% accuracy with custom vocabulary, supports 30+ languages)
+- No bot joining the meeting (operates via Chrome extension)
+
+### AI Intelligence
+- AI Summary (Delivered within 30 seconds of meeting end)
+- Smart Markers (Auto-detects financial figures, competitors, dates)
+- Action Item Tracking (Auto-assigned to mentioned team members, smart deadline inference)
+
+### Analytics & Insights
+- Speaker Analytics (Talk-time distribution, engagement scoring, historical trend analysis)
+- Attendance Tracking (Auto-detects who is speaking and for how long)
+
+### Integrations & Workflow
+- CRM Sync (Bi-directional sync with Salesforce and HubSpot)
+- PDF Export
+
+## Target Audience & Use Cases
+- Sales Teams: Auto-sync notes to CRM, track next steps.
+- Product Managers: Capture feature requests, document decisions.
+- Engineering Teams: Document technical decisions.
+- Startups: Keep stakeholders aligned without attending.
+- Consultants: Generate client reports, track billable time.
+
+## Frequently Asked Questions
+- Is Voxa really free? Yes, completely free forever.
+- Does it work on Zoom or Teams? No, exclusively Google Meet.
+- Do I need a Workspace account? No, works with personal Google accounts too.
+- Can I use it on mobile? No, desktop Chrome extension only.
+
+## Additional Resources
+- Features: https://www.tryvoxa.app/features
+- Compare: https://www.tryvoxa.app/compare
+- Use Cases: https://www.tryvoxa.app/use-cases
+- Blog: https://www.tryvoxa.app/blog
+- Contact: https://www.tryvoxa.app/contact
+

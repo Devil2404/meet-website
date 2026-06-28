@@ -3,11 +3,25 @@ import Navbar from '@/components/landing/navbar';
 import Footer from '@/components/landing/footer';
 
 export const metadata = {
+  title: 'Contact Us - Voxa',
+  description: 'Get in touch with the Voxa team. We are here to help you with any questions, support requests, or partnership inquiries regarding our AI meeting recorder.',
   alternates: {
     canonical: '/contact',
   },
-  title: 'Contact Us - Voxa',
-  description: 'Contact the Voxa team',
+  openGraph: {
+    title: 'Contact Us - Voxa',
+    description: 'Get in touch with the Voxa team. We are here to help you with any questions, support requests, or partnership inquiries regarding our AI meeting recorder.',
+    url: 'https://www.tryvoxa.app/contact',
+    siteName: 'Voxa',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Contact Voxa' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Us - Voxa',
+    description: 'Get in touch with the Voxa team. We are here to help you with any questions, support requests, or partnership inquiries regarding our AI meeting recorder.',
+    images: ['/og-image.png'],
+  },
 };
 
 export default function ContactPage() {
