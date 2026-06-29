@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: { unoptimized: true },
+  // Image optimization enabled
 };
 
 module.exports = nextConfig;

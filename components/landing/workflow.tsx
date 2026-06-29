@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Mic, FileText, Sparkles, CheckSquare, Database } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -73,17 +73,17 @@ export default function Workflow() {
     <section className="py-32 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <motion.div {...fadeUp} className="text-center mb-20">
+        <m.div {...fadeUp} className="text-center mb-20">
           <h2 className="text-section-mobile md:text-section text-white">
             From conversation to action
           </h2>
           <p className="text-subtitle text-white/40 mt-4 max-w-xl mx-auto">
             Every meeting flows through Voxa&apos;s intelligent pipeline.
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Steps */}
-        <motion.div
+        <m.div
           {...stagger}
           className="flex flex-col md:flex-row items-center md:items-start justify-center gap-0"
         >
@@ -94,7 +94,7 @@ export default function Workflow() {
                 key={step.label}
                 className="flex flex-col md:flex-row items-center md:items-start gap-0"
               >
-                <motion.div
+                <m.div
                   {...staggerChild}
                   className="flex flex-col items-center gap-3 group"
                 >
@@ -104,7 +104,7 @@ export default function Workflow() {
                       className="absolute inset-0 rounded-2xl opacity-30 blur-xl pointer-events-none"
                       style={{ background: step.color }}
                     />
-                    <motion.div
+                    <m.div
                       whileHover={{
                         scale: 1.08,
                         boxShadow: `0 0 24px ${step.color}22`,
@@ -118,12 +118,12 @@ export default function Workflow() {
                       }}
                     >
                       <Icon size={22} style={{ color: step.color }} />
-                    </motion.div>
+                    </m.div>
                   </div>
                   <span className="text-xs text-white/50 font-medium tracking-wide">
                     {step.label}
                   </span>
-                </motion.div>
+                </m.div>
 
                 {/* Connector */}
                 {i < steps.length - 1 && (
@@ -134,7 +134,7 @@ export default function Workflow() {
               </div>
             );
           })}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

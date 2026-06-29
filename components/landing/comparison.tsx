@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Check, X } from 'lucide-react';
 import Image from 'next/image';
 
@@ -58,16 +58,16 @@ function CellContent({
 export default function Comparison() {
   return (
     <section id="compare" className="py-32 px-6">
-      <motion.div className="text-center" {...fadeUp}>
+      <m.div className="text-center" {...fadeUp}>
         <h2 className="text-section-mobile md:text-section text-white">
           See the full picture
         </h2>
         <p className="text-subtitle text-white/40 mt-4 max-w-xl mx-auto">
           Compare Voxa with other meeting tools.
         </p>
-      </motion.div>
+      </m.div>
 
-      <motion.div
+      <m.div
         className="mt-16 max-w-4xl mx-auto rounded-2xl border border-white/[0.06] bg-voxa-surface1 overflow-hidden"
         {...fadeUp}
       >
@@ -91,7 +91,7 @@ export default function Comparison() {
           </thead>
           <tbody>
             {features.map((row, i) => (
-              <motion.tr
+              <m.tr
                 key={row.feature}
                 className={`border-b border-white/[0.04] ${
                   i % 2 === 1 ? 'bg-white/[0.01]' : ''
@@ -118,11 +118,11 @@ export default function Comparison() {
                 <td className="p-4 text-center">
                   <CellContent value={row.fireflies} />
                 </td>
-              </motion.tr>
+              </m.tr>
             ))}
           </tbody>
         </table>
-      </motion.div>
+      </m.div>
     </section>
   );
 }

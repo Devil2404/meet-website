@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Video, Sparkles, Database, CheckSquare, Mail } from 'lucide-react';
 
 const fadeUp = {
@@ -53,14 +53,14 @@ const crmFields = [
 export default function CrmAutomation() {
   return (
     <section className="py-32 px-6">
-      <motion.div className="text-center" {...fadeUp}>
+      <m.div className="text-center" {...fadeUp}>
         <h2 className="text-section-mobile md:text-section text-white">
           Your CRM fills itself
         </h2>
         <p className="text-subtitle text-white/40 mt-4 max-w-xl mx-auto">
           You run the meeting. Voxa handles the data entry.
         </p>
-      </motion.div>
+      </m.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-16 max-w-6xl mx-auto">
         {/* Left column — Workflow Pipeline */}
@@ -69,7 +69,7 @@ export default function CrmAutomation() {
             const Icon = step.icon;
             return (
               <div key={step.title}>
-                <motion.div
+                <m.div
                   className="flex items-start gap-4"
                   initial={{ opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ export default function CrmAutomation() {
                     <p className="font-medium text-white">{step.title}</p>
                     <p className="text-sm text-white/40">{step.description}</p>
                   </div>
-                </motion.div>
+                </m.div>
 
                 {i < steps.length - 1 && (
                   <div className="w-px h-8 bg-gradient-to-b from-voxa-purple/30 to-voxa-indigo/30 ml-6" />
@@ -98,7 +98,7 @@ export default function CrmAutomation() {
         </div>
 
         {/* Right column — CRM Card Mockup */}
-        <motion.div
+        <m.div
           className="rounded-2xl border border-white/[0.06] bg-voxa-surface1 p-6"
           {...fadeUp}
         >
@@ -127,7 +127,7 @@ export default function CrmAutomation() {
               </span>
             </div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
 
       {/* Subtle coming soon indicator */}

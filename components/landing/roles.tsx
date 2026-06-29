@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import {
   TrendingUp,
   UserCheck,
@@ -357,7 +357,7 @@ export default function Roles() {
   return (
     <section className="py-32 px-6 relative overflow-hidden">
       {/* heading */}
-      <motion.div className="text-center max-w-3xl mx-auto" {...fadeUp}>
+      <m.div className="text-center max-w-3xl mx-auto" {...fadeUp}>
         <h2 className="text-section-mobile md:text-section font-bold text-white">
           Built for every role at the{' '}
           <span className="gradient-text">table</span>
@@ -365,10 +365,10 @@ export default function Roles() {
         <p className="mt-6 text-xl text-white/40 max-w-2xl mx-auto leading-relaxed">
           Voxa adapts its intelligence to match how you work.
         </p>
-      </motion.div>
+      </m.div>
 
       {/* bento grid */}
-      <motion.div
+      <m.div
         className="mt-16 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4"
         variants={container}
         initial="hidden"
@@ -379,7 +379,7 @@ export default function Roles() {
           const Icon = r.icon;
           const Illustration = r.illustration;
           return (
-            <motion.div
+            <m.div
               key={r.role}
               variants={item}
               className={`p-8 rounded-2xl border border-white/[0.06] bg-voxa-surface1 relative overflow-hidden group hover:border-white/[0.12] transition-all ${r.colSpan}`}
@@ -432,10 +432,10 @@ export default function Roles() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           );
         })}
-      </motion.div>
+      </m.div>
 
     </section>
   );

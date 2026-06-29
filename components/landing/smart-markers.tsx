@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import {
   FileText,
   DollarSign,
@@ -174,7 +174,7 @@ export default function SmartMarkers() {
   return (
     <section className="py-32 px-6 relative overflow-hidden">
       {/* heading */}
-      <motion.div className="text-center max-w-3xl mx-auto" {...fadeUp}>
+      <m.div className="text-center max-w-3xl mx-auto" {...fadeUp}>
         <h2 className="text-section-mobile md:text-section font-bold text-white">
           Intelligence that catches what you{' '}
           <span className="gradient-text">miss</span>
@@ -183,10 +183,10 @@ export default function SmartMarkers() {
           Smart Markers automatically detect critical keywords and moments in
           every conversation.
         </p>
-      </motion.div>
+      </m.div>
 
       {/* transcript mockup */}
-      <motion.div
+      <m.div
         className="mt-20 max-w-5xl mx-auto"
         {...fadeUp}
         transition={{ ...fadeUp.transition, delay: 0.15 }}
@@ -207,7 +207,7 @@ export default function SmartMarkers() {
           {/* transcript body */}
           <div className="divide-y divide-white/[0.04]">
             {transcriptLines.map((line, i) => (
-              <motion.div
+              <m.div
                 key={i}
                 className="flex gap-4 px-6 py-4 hover:bg-white/[0.02] transition-colors"
                 initial={{ opacity: 0, x: -12 }}
@@ -242,7 +242,7 @@ export default function SmartMarkers() {
                   </div>
                   <p className="text-sm text-white/50 leading-relaxed">
                     {line.before}
-                    <motion.span
+                    <m.span
                       className={`inline-flex px-1.5 py-0.5 rounded-md text-xs font-medium mx-0.5 ${line.badge}`}
                       animate={{
                         opacity: [1, 0.7, 1],
@@ -259,18 +259,18 @@ export default function SmartMarkers() {
                       }}
                     >
                       {line.keyword}
-                    </motion.span>
+                    </m.span>
                     {line.after}
                   </p>
                 </div>
-              </motion.div>
+              </m.div>
             ))}
           </div>
         </div>
-      </motion.div>
+      </m.div>
 
       {/* marker category cards */}
-      <motion.div
+      <m.div
         className="mt-12 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
         variants={container}
         initial="hidden"
@@ -278,7 +278,7 @@ export default function SmartMarkers() {
         viewport={{ once: true, margin: '-80px' }}
       >
         {markerCategories.map((cat) => (
-          <motion.div
+          <m.div
             key={cat.name}
             variants={item}
             whileHover={{ y: -2, boxShadow: '0 4px 20px rgba(123,92,245,0.15)' }}
@@ -293,9 +293,9 @@ export default function SmartMarkers() {
             <p className="mt-2 text-sm text-white/40 leading-relaxed">
               {cat.example}
             </p>
-          </motion.div>
+          </m.div>
         ))}
-      </motion.div>
+      </m.div>
     </section>
   );
 }

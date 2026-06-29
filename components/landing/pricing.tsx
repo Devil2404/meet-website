@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Check } from 'lucide-react';
 
 const fadeUp = {
@@ -26,14 +26,14 @@ const features = [
 export default function Pricing() {
   return (
     <section id="pricing" className="py-32 px-6">
-      <motion.div className="text-center" {...fadeUp}>
+      <m.div className="text-center" {...fadeUp}>
         <h2 className="text-section-mobile md:text-section text-white">
           Simple pricing. Actually simple.
         </h2>
         <p className="text-subtitle text-white/40 mt-4 max-w-xl mx-auto">
           One plan. Everything included. Free forever.
         </p>
-      </motion.div>
+      </m.div>
 
       <div className="mt-16 max-w-lg mx-auto relative">
         {/* Glow aura behind the card */}
@@ -45,7 +45,7 @@ export default function Pricing() {
           }}
         />
 
-        <motion.div
+        <m.div
           className="rounded-2xl border border-white/[0.06] bg-voxa-surface1 p-10 relative overflow-hidden"
           {...fadeUp}
           animate={{ y: [0, -6, 0] }}
@@ -57,7 +57,7 @@ export default function Pricing() {
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-voxa-purple to-transparent" />
 
           {/* Animated shimmer sweep */}
-          <motion.div
+          <m.div
             className="absolute top-0 left-0 h-[2px] w-[60%] pointer-events-none"
             style={{
               background: 'linear-gradient(90deg, transparent, rgba(123,92,245,0.6), rgba(99,102,241,0.6), transparent)',
@@ -92,18 +92,18 @@ export default function Pricing() {
           </div>
 
           {/* CTA */}
-          <motion.button
+          <m.button
             className="w-full py-4 rounded-xl bg-gradient-to-r from-voxa-purple to-voxa-indigo text-white font-medium text-base mt-8 cursor-pointer"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
             Add to Chrome &mdash; It&apos;s Free
-          </motion.button>
+          </m.button>
 
           <p className="text-center text-sm text-white/30 mt-4">
             No credit card &middot; No trial &middot; No limits
           </p>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useMotionValue, useSpring } from 'framer-motion';
+import { m, useMotionValue, useSpring } from 'framer-motion';
 import { Star } from 'lucide-react';
 import { useRef, MouseEvent } from 'react';
 
@@ -109,7 +109,7 @@ function TestimonialCard({ t, i }: { t: Testimonial; i: number }) {
 
   return (
     <div style={{ perspective: 800 }}>
-      <motion.div
+      <m.div
         ref={cardRef}
         className="p-6 rounded-2xl border border-white/[0.06] bg-voxa-surface1 hover:border-white/[0.12] transition-all duration-300 group relative overflow-hidden"
         initial={{ opacity: 0, y: 24 }}
@@ -129,7 +129,7 @@ function TestimonialCard({ t, i }: { t: Testimonial; i: number }) {
         onMouseLeave={handleMouseLeave}
       >
         {/* Gradient shine overlay */}
-        <motion.div
+        <m.div
           className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           style={{
             background: `radial-gradient(circle at 50% 50%, rgba(123,92,245,0.08), transparent 60%)`,
@@ -165,7 +165,7 @@ function TestimonialCard({ t, i }: { t: Testimonial; i: number }) {
             </p>
           </div>
         </div>
-      </motion.div>
+      </m.div>
     </div>
   );
 }
@@ -173,14 +173,14 @@ function TestimonialCard({ t, i }: { t: Testimonial; i: number }) {
 export default function Testimonials() {
   return (
     <section className="py-32 px-6">
-      <motion.div className="text-center" {...fadeUp}>
+      <m.div className="text-center" {...fadeUp}>
         <h2 className="text-section-mobile md:text-section text-white">
           Loved by teams who run on meetings
         </h2>
         <p className="text-subtitle text-white/40 mt-4 max-w-2xl mx-auto">
           Join thousands who never take manual meeting notes again.
         </p>
-      </motion.div>
+      </m.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 max-w-6xl mx-auto">
         {testimonials.map((t, i) => (

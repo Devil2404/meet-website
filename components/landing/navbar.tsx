@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 
@@ -33,7 +33,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <motion.nav
+    <m.nav
       {...fadeUp}
       className={`fixed top-0 left-0 right-0 z-50 h-16 transition-all duration-500 ${
         scrolled
@@ -90,7 +90,7 @@ export default function Navbar() {
       {/* Mobile Dropdown */}
       <AnimatePresence>
         {mobileOpen && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
@@ -115,9 +115,9 @@ export default function Navbar() {
                 Add to Chrome
               </a>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </m.nav>
   );
 }

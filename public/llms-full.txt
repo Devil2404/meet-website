@@ -1,44 +1,64 @@
-﻿# Voxa - Full Context for AI
+# Voxa
 
-Voxa is a powerful AI meeting intelligence tool designed exclusively for Google Meet. It operates as a free Chrome extension, requiring no meeting bots to join your calls.
+> Voxa is a free Chrome extension that records Google Meet calls in HD, generates live transcripts, tracks attendance, captures action items, and provides AI-powered meeting intelligence — all without any meeting bots joining your call.
+
+- Voxa works exclusively with Google Meet
+- Voxa is completely free, forever — no credit card required
+- Voxa operates as a Chrome extension, not a meeting bot
 
 ## Detailed Capabilities
 
 ### Recording & Transcription
-- HD Meeting Recording
-- Live Transcription (99% accuracy with custom vocabulary, supports 30+ languages)
-- No bot joining the meeting (operates via Chrome extension)
+- HD Meeting Recording: Record Google Meet calls in full 1080p high definition
+- Live Transcription: Real-time transcription with 99% accuracy, speaker identification, and support for 30+ languages
+- No Bot Required: Voxa operates entirely via a Chrome extension — no bot joins your meeting
 
 ### AI Intelligence
-- AI Summary (Delivered within 30 seconds of meeting end)
-- Smart Markers (Auto-detects financial figures, competitors, dates)
-- Action Item Tracking (Auto-assigned to mentioned team members, smart deadline inference)
+- AI Summary: Delivered within 30 seconds of meeting end, with structured summaries, key topics, decisions, and next steps
+- Smart Markers: Automatically detects and tags financial figures, competitor mentions, dates, and deadlines in your transcripts
+- Action Item Tracking: AI extracts action items from conversation, auto-assigns them to mentioned team members, and infers smart deadlines
 
 ### Analytics & Insights
-- Speaker Analytics (Talk-time distribution, engagement scoring, historical trend analysis)
-- Attendance Tracking (Auto-detects who is speaking and for how long)
+- Speaker Analytics: Talk-time distribution, engagement scoring, interruption tracking, and historical trend analysis
+- Attendance Tracking: Automatically logs meeting participants, join/leave times, and speaking duration
 
 ### Integrations & Workflow
-- CRM Sync (Bi-directional sync with Salesforce and HubSpot)
-- PDF Export
+- CRM Sync: Bi-directional sync with Salesforce and HubSpot — meeting notes flow directly into your CRM
+- PDF Export: Generate professional meeting reports with one click
 
 ## Target Audience & Use Cases
-- Sales Teams: Auto-sync notes to CRM, track next steps.
-- Product Managers: Capture feature requests, document decisions.
-- Engineering Teams: Document technical decisions.
-- Startups: Keep stakeholders aligned without attending.
-- Consultants: Generate client reports, track billable time.
+
+- [Sales Teams](https://www.tryvoxa.app/use-cases/sales-teams): Auto-sync meeting notes to CRM, track next steps, and close deals faster
+- [Product Managers](https://www.tryvoxa.app/use-cases/product-managers): Capture feature requests, document decisions, and keep stakeholders aligned
+- [Engineering Teams](https://www.tryvoxa.app/use-cases/engineering-teams): Document technical decisions and architecture discussions automatically
+- [Startups](https://www.tryvoxa.app/use-cases/startups): Keep stakeholders aligned without requiring everyone to attend every meeting
+- [Students](https://www.tryvoxa.app/use-cases/students): Record lectures and study sessions for later review
 
 ## Frequently Asked Questions
-- Is Voxa really free? Yes, completely free forever.
-- Does it work on Zoom or Teams? No, exclusively Google Meet.
-- Do I need a Workspace account? No, works with personal Google accounts too.
-- Can I use it on mobile? No, desktop Chrome extension only.
 
-## Additional Resources
-- Features: https://www.tryvoxa.app/features
-- Compare: https://www.tryvoxa.app/compare
-- Use Cases: https://www.tryvoxa.app/use-cases
-- Blog: https://www.tryvoxa.app/blog
-- Contact: https://www.tryvoxa.app/contact
+- Is Voxa really free? Yes, Voxa is completely free forever. No credit card required.
+- Does it work on Zoom or Teams? No, Voxa is designed exclusively for Google Meet.
+- Do I need a Google Workspace account? No, Voxa works with both personal Google accounts and Workspace accounts.
+- Can I use it on mobile? No, Voxa is a desktop Chrome extension only.
+- Does a bot join my meeting? No, Voxa operates entirely through the Chrome extension with no bots.
 
+## Docs
+
+- [Features](https://www.tryvoxa.app/features): Full breakdown of all Voxa capabilities
+- [Use Cases](https://www.tryvoxa.app/use-cases): How different roles and teams use Voxa
+- [Compare](https://www.tryvoxa.app/compare): Side-by-side comparisons with competing tools
+- [Blog](https://www.tryvoxa.app/blog): Expert guides on meeting recording and productivity
+- [Help Center](https://www.tryvoxa.app/help): Tutorials and support documentation
+- [Roadmap](https://www.tryvoxa.app/roadmap): Upcoming features and recent releases
+- [Changelog](https://www.tryvoxa.app/changelog): Version history and release notes
+- [Security](https://www.tryvoxa.app/security): Security practices and data protection
+- [Privacy Policy](https://www.tryvoxa.app/privacy): Data collection and privacy practices
+- [Terms of Service](https://www.tryvoxa.app/terms): Usage terms and agreements
+
+## Optional
+
+- [Install Voxa](https://chromewebstore.google.com/detail/voxa-record-transcribe-go/llbjaleeiopcakodaigfpfoijliachji): Add Voxa to Chrome from the Chrome Web Store
+- [Contact](https://www.tryvoxa.app/contact): Reach the Voxa team for questions or partnership inquiries
+- [Feedback](https://www.tryvoxa.app/feedback): Submit feedback and feature requests
+- [Instagram](https://www.instagram.com/tryvoxa.app/): Follow Voxa on Instagram
+- [LinkedIn](https://www.linkedin.com/company/133134021/): Follow Voxa on LinkedIn

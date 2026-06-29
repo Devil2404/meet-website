@@ -1,20 +1,26 @@
-﻿# Voxa - AI Meeting Intelligence
+# Voxa
 
-Voxa is a Google Meet recorder with live transcripts, meeting notes, attendance tracking, speaker analytics, and action item management. It is a free Chrome extension.
+> Voxa is a free Chrome extension that records Google Meet calls in HD, generates live transcripts, tracks attendance, captures action items, and provides AI-powered meeting intelligence — all without any meeting bots joining your call.
 
-## Key Features
-- Live Transcript: Real-time transcription with speaker identification.
-- AI Summary: Structured summaries, key topics, decisions, and next steps.
-- Smart Markers: Automatic tagging of critical mentions (budgets, competitors, deadlines).
-- Action Items: Extracted from conversation and assigned with due dates.
-- Speaker Analytics: Talk-time breakdowns, interruption tracking.
-- CRM Sync: Integration with Salesforce and HubSpot.
+- Voxa works exclusively with Google Meet
+- Voxa is completely free, forever — no credit card required
+- Voxa operates as a Chrome extension, not a meeting bot
 
-## Important Links
-- Home: https://www.tryvoxa.app/
-- Features: https://www.tryvoxa.app/features
-- Compare: https://www.tryvoxa.app/compare
-- Use Cases: https://www.tryvoxa.app/use-cases
-- Blog: https://www.tryvoxa.app/blog
-- Pricing: Free forever (https://www.tryvoxa.app/#pricing)
+## Docs
 
+- [Features](https://www.tryvoxa.app/features): Full breakdown of Voxa capabilities including AI summaries, smart markers, speaker analytics, and CRM sync
+- [Use Cases](https://www.tryvoxa.app/use-cases): How sales teams, product managers, engineers, startups, and students use Voxa
+- [Compare](https://www.tryvoxa.app/compare): Side-by-side comparisons of Voxa vs tl;dv, Scribbl, Fireflies, and Otter
+- [Blog](https://www.tryvoxa.app/blog): Guides on meeting recording, AI transcription, and productivity for Google Meet
+- [Help Center](https://www.tryvoxa.app/help): Tutorials and support for getting started with Voxa
+- [Roadmap](https://www.tryvoxa.app/roadmap): Upcoming features and recent releases
+- [Changelog](https://www.tryvoxa.app/changelog): Version history and release notes
+- [Security](https://www.tryvoxa.app/security): How Voxa protects your meeting data
+- [Privacy Policy](https://www.tryvoxa.app/privacy): Data collection and privacy practices
+- [Terms of Service](https://www.tryvoxa.app/terms): Usage terms and agreements
+
+## Optional
+
+- [Install Voxa](https://chromewebstore.google.com/detail/voxa-record-transcribe-go/llbjaleeiopcakodaigfpfoijliachji): Add Voxa to Chrome from the Chrome Web Store
+- [Contact](https://www.tryvoxa.app/contact): Reach the Voxa team for questions or partnership inquiries
+- [Feedback](https://www.tryvoxa.app/feedback): Submit feedback and feature requests

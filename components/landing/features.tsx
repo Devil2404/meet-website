@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import {
   FileText,
   Sparkles,
@@ -351,7 +351,7 @@ function AnalyticsMockup() {
             <span className="text-xs text-white/30 font-medium">{s.pct}%</span>
           </div>
           <div className="w-full h-2 rounded-full bg-voxa-surface2 overflow-hidden">
-            <motion.div
+            <m.div
               initial={{ width: 0 }}
               whileInView={{ width: `${s.pct}%` }}
               viewport={{ once: true }}
@@ -438,7 +438,7 @@ export default function Features() {
     <section id="features" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <motion.div {...fadeUp} className="text-center mb-24">
+        <m.div {...fadeUp} className="text-center mb-24">
           <h2 className="text-section-mobile md:text-section text-white">
             Everything you need.
             <br className="hidden md:block" /> Nothing you don&apos;t.
@@ -446,7 +446,7 @@ export default function Features() {
           <p className="text-subtitle text-white/40 mt-4 max-w-xl mx-auto">
             Powerful features designed to make every meeting count.
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Feature Rows */}
         <div className="space-y-32">
@@ -463,7 +463,7 @@ export default function Features() {
                 }`}
               >
                 {/* Text side */}
-                <motion.div
+                <m.div
                   initial={{ opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-80px' }}
@@ -501,10 +501,10 @@ export default function Features() {
                       </li>
                     ))}
                   </ul>
-                </motion.div>
+                </m.div>
 
                 {/* Mockup side — parallax offset: fades from y:40 with delay */}
-                <motion.div
+                <m.div
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-80px' }}
@@ -515,7 +515,7 @@ export default function Features() {
                   <div className="rounded-2xl border border-white/[0.06] bg-voxa-surface1 p-6 overflow-hidden">
                     {MockupComponent && <MockupComponent />}
                   </div>
-                </motion.div>
+                </m.div>
               </div>
             );
           })}

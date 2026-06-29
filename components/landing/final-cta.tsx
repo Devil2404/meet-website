@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Sparkles, Zap, Shield, Globe } from 'lucide-react';
 
 const fadeUp = {
@@ -32,7 +32,7 @@ export default function FinalCta() {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
 
       {/* Floating gradient orbs */}
-      <motion.div
+      <m.div
         className="absolute top-1/4 left-[10%] w-72 h-72 rounded-full pointer-events-none"
         style={{
           background: 'radial-gradient(circle, rgba(123,92,245,0.15) 0%, transparent 70%)',
@@ -49,7 +49,7 @@ export default function FinalCta() {
           ease: 'easeInOut',
         }}
       />
-      <motion.div
+      <m.div
         className="absolute bottom-1/4 right-[10%] w-64 h-64 rounded-full pointer-events-none"
         style={{
           background: 'radial-gradient(circle, rgba(99,102,241,0.12) 0%, transparent 70%)',
@@ -66,7 +66,7 @@ export default function FinalCta() {
           ease: 'easeInOut',
         }}
       />
-      <motion.div
+      <m.div
         className="absolute top-1/2 left-[50%] w-56 h-56 rounded-full pointer-events-none -translate-x-1/2"
         style={{
           background: 'radial-gradient(circle, rgba(139,92,246,0.1) 0%, transparent 70%)',
@@ -85,14 +85,14 @@ export default function FinalCta() {
 
       {/* Content */}
       <div className="max-w-3xl mx-auto text-center relative z-10">
-        <motion.h2
+        <m.h2
           className="text-[3rem] md:text-[3.5rem] font-bold text-white leading-[1.1] tracking-tight"
           {...fadeUp}
         >
           Stop losing what matters in meetings.
-        </motion.h2>
+        </m.h2>
 
-        <motion.p
+        <m.p
           className="text-xl text-white/40 mt-6 max-w-xl mx-auto"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -100,16 +100,16 @@ export default function FinalCta() {
           transition={{ duration: 0.6, ease: [0.25, 0.4, 0, 1] as const, delay: 0.1 }}
         >
           Join thousands of professionals who never take manual meeting notes.
-        </motion.p>
+        </m.p>
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.6, ease: [0.25, 0.4, 0, 1] as const, delay: 0.2 }}
           className="mt-10"
         >
-          <motion.button
+          <m.button
             className="px-10 py-5 rounded-xl bg-gradient-to-r from-voxa-purple to-voxa-indigo text-white font-semibold text-lg inline-flex items-center gap-2 cursor-pointer relative"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
@@ -130,10 +130,10 @@ export default function FinalCta() {
           >
             <Globe className="w-5 h-5" />
             Add Voxa to Chrome
-          </motion.button>
-        </motion.div>
+          </m.button>
+        </m.div>
 
-        <motion.div
+        <m.div
           className="mt-8 flex gap-6 justify-center flex-wrap"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -152,7 +152,7 @@ export default function FinalCta() {
               </div>
             );
           })}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

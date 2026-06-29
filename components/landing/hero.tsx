@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
-import { motion, useSpring, useTransform, useMotionValue } from 'framer-motion';
+import { m, useSpring, useTransform, useMotionValue } from 'framer-motion';
 import { Play, FileText } from 'lucide-react';
 
 const fadeUp = {
@@ -100,7 +100,7 @@ function ProductMockup() {
   };
 
   return (
-    <motion.div
+    <m.div
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -196,7 +196,7 @@ function ProductMockup() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -215,7 +215,7 @@ export default function Hero() {
       <div className="absolute inset-0 pointer-events-none bg-grid-subtle" />
 
       {/* Floating animated orbs */}
-      <motion.div
+      <m.div
         className="absolute top-[10%] left-[15%] w-[320px] h-[320px] rounded-full pointer-events-none"
         style={{ background: 'rgba(123,92,245,0.07)', filter: 'blur(100px)' }}
         animate={{
@@ -226,7 +226,7 @@ export default function Hero() {
         }}
         transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
       />
-      <motion.div
+      <m.div
         className="absolute top-[55%] right-[10%] w-[280px] h-[280px] rounded-full pointer-events-none"
         style={{ background: 'rgba(79,106,250,0.06)', filter: 'blur(100px)' }}
         animate={{
@@ -237,7 +237,7 @@ export default function Hero() {
         }}
         transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
       />
-      <motion.div
+      <m.div
         className="absolute top-[30%] right-[25%] w-[400px] h-[400px] rounded-full pointer-events-none"
         style={{ background: 'rgba(28,196,232,0.04)', filter: 'blur(120px)' }}
         animate={{
@@ -248,7 +248,7 @@ export default function Hero() {
         }}
         transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }}
       />
-      <motion.div
+      <m.div
         className="absolute bottom-[15%] left-[30%] w-[240px] h-[240px] rounded-full pointer-events-none"
         style={{ background: 'rgba(123,92,245,0.05)', filter: 'blur(80px)' }}
         animate={{
@@ -260,39 +260,39 @@ export default function Hero() {
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
       />
 
-      <motion.div {...stagger} className="relative z-10 w-full px-6 py-20">
+      <m.div {...stagger} className="relative z-10 w-full px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <motion.div {...staggerChild} className="flex justify-center mb-8">
+          <m.div {...staggerChild} className="flex justify-center mb-8">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/[0.06] bg-white/[0.03] text-white/50 text-sm">
               Free forever · No credit card required
             </span>
-          </motion.div>
+          </m.div>
 
           {/* Headline */}
-          <motion.h1
+          <m.h1
             {...staggerChild}
             className="text-hero-mobile md:text-hero text-white text-center"
           >
             Never take meeting
             <br />
             notes again.
-          </motion.h1>
+          </m.h1>
 
           {/* Subheadline */}
-          <motion.p
+          <m.p
             {...staggerChild}
             className="text-xl text-white/40 max-w-3xl mx-auto text-center mt-6"
           >
             Record Google Meet in HD, generate live transcripts, track attendance, capture action items, and export professional meeting notes—all in one powerful free extension.
-          </motion.p>
+          </m.p>
 
           {/* CTA Buttons */}
-          <motion.div
+          <m.div
             {...staggerChild}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10"
           >
-            <motion.a
+            <m.a
               href="https://chromewebstore.google.com/detail/voxa-record-transcribe-go/llbjaleeiopcakodaigfpfoijliachji"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -307,15 +307,15 @@ export default function Hero() {
                   animation: 'shimmer 2.5s infinite',
                 }}
               />
-            </motion.a>
-          </motion.div>
+            </m.a>
+          </m.div>
         </div>
 
         {/* Product Mockup */}
-        <motion.div {...staggerChild}>
+        <m.div {...staggerChild}>
           <ProductMockup />
-        </motion.div>
-      </motion.div>
+        </m.div>
+      </m.div>
     </section>
   );
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Mic, Users, Timer, Activity } from 'lucide-react';
 
 /* ── animation variants ── */
@@ -78,7 +78,7 @@ export default function Analytics() {
   return (
     <section className="py-32 px-6 relative overflow-hidden">
       {/* heading */}
-      <motion.div className="text-center max-w-3xl mx-auto" {...fadeUp}>
+      <m.div className="text-center max-w-3xl mx-auto" {...fadeUp}>
         <h2 className="text-section-mobile md:text-section font-bold text-white">
           Understand every{' '}
           <span className="gradient-text">conversation</span>
@@ -86,12 +86,12 @@ export default function Analytics() {
         <p className="mt-6 text-xl text-white/40 max-w-2xl mx-auto leading-relaxed">
           Real-time speaker analytics and participation insights.
         </p>
-      </motion.div>
+      </m.div>
 
       {/* main grid */}
       <div className="mt-16 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6">
         {/* left — donut chart */}
-        <motion.div
+        <m.div
           className="lg:col-span-3 rounded-2xl border border-white/[0.06] bg-voxa-surface1 p-6"
           {...fadeUp}
           transition={{ ...fadeUp.transition, delay: 0.1 }}
@@ -137,7 +137,7 @@ export default function Analytics() {
 
                 {/* arcs */}
                 {arcs.map((arc) => (
-                  <motion.circle
+                  <m.circle
                     key={arc.name}
                     cx={CENTER}
                     cy={CENTER}
@@ -166,7 +166,7 @@ export default function Analytics() {
               </svg>
 
               {/* center stat */}
-              <motion.div
+              <m.div
                 className="absolute inset-0 flex flex-col items-center justify-center"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -175,7 +175,7 @@ export default function Analytics() {
               >
                 <span className="text-2xl font-bold text-white">45:00</span>
                 <span className="text-[11px] text-white/40 mt-0.5">Total Time</span>
-              </motion.div>
+              </m.div>
             </div>
 
             {/* legend */}
@@ -194,10 +194,10 @@ export default function Analytics() {
               ))}
             </div>
           </div>
-        </motion.div>
+        </m.div>
 
         {/* right — stats */}
-        <motion.div
+        <m.div
           className="lg:col-span-2 grid grid-cols-2 gap-4"
           {...fadeUp}
           transition={{ ...fadeUp.transition, delay: 0.2 }}
@@ -222,11 +222,11 @@ export default function Analytics() {
               </div>
             );
           })}
-        </motion.div>
+        </m.div>
       </div>
 
       {/* participation timeline */}
-      <motion.div
+      <m.div
         className="mt-6 max-w-6xl mx-auto rounded-2xl border border-white/[0.06] bg-voxa-surface1 p-6"
         {...fadeUp}
         transition={{ ...fadeUp.transition, delay: 0.3 }}
@@ -272,7 +272,7 @@ export default function Analytics() {
             </div>
           ))}
         </div>
-      </motion.div>
+      </m.div>
     </section>
   );
 }
