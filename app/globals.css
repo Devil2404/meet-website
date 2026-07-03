@@ -178,6 +178,19 @@
   }
 }
 
+/* Waveform animation for hero video */
+@keyframes waveform {
+  0% {
+    height: 4px;
+  }
+  50% {
+    height: 20px;
+  }
+  100% {
+    height: 8px;
+  }
+}
+
 .animate-shimmer {
   animation: shimmer 3s ease-in-out infinite;
   background: linear-gradient(

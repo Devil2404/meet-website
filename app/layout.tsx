@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     'Voxa is a Google Meet recorder with live transcripts, meeting notes, attendance tracking, speaker analytics, and action item management. Free Chrome extension.',
   applicationName: 'Voxa',
   category: 'productivity',
+  creator: 'Voxa',
+  publisher: 'Voxa',
   keywords: [
     'meeting recorder',
     'Google Meet',
@@ -24,10 +26,17 @@ export const metadata: Metadata = {
     'smart markers',
     'action items',
     'meeting intelligence',
+    'meeting recording',
+    'AI transcription',
+    'Google Meet recorder',
+    'free meeting recorder',
+    'attendance tracking',
   ],
-  authors: [{ name: 'Voxa' }],
+  authors: [{ name: 'Voxa', url: 'https://www.tryvoxa.app' }],
   formatDetection: {
     telephone: false,
+    email: false,
+    address: false,
   },
   robots: {
     index: true,
@@ -41,7 +50,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: '/',
+    canonical: 'https://www.tryvoxa.app/',
     languages: {
       'en': 'https://www.tryvoxa.app',
       'x-default': 'https://www.tryvoxa.app',
@@ -59,24 +68,39 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://www.tryvoxa.app',
     siteName: 'Voxa',
+    locale: 'en_US',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://www.tryvoxa.app/og-image.png',
+        secureUrl: 'https://www.tryvoxa.app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Voxa — AI meeting intelligence for Google Meet',
+        type: 'image/png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Voxa — AI Meeting Recorder & Notes for Google Meet | Free Extension',
+    title: 'Voxa — Free AI Meeting Recorder for Google Meet',
     description:
-      'Stop taking meeting notes manually. Voxa records Google Meet in HD, generates live transcripts, tracks attendance, captures action items & syncs to your CRM — completely free.',
-    images: ['/og-image.png'],
+      'Record Google Meet in HD, get live transcripts, track attendance, capture action items & sync to your CRM — all free. No meeting bots needed.',
+    site: '@tryvoxa',
+    creator: '@tryvoxa',
+    images: [
+      {
+        url: 'https://www.tryvoxa.app/og-image.png',
+        alt: 'Voxa — AI meeting intelligence for Google Meet',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   verification: {
     google: '_t6Op_k_gq3lokErsqVMRah_yFFRPRmu_YHTkhoYQWU',
+  },
+  other: {
+    'theme-color': '#0a0a0a',
   },
 };
 

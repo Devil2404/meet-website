@@ -4,3 +4,19 @@ publish = ".next"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
+
+# Redirect non-www to www with 301 (permanent)
+[[redirects]]
+from = "https://tryvoxa.app/*"
+to = "https://www.tryvoxa.app/:splat"
+status = 301
+force = true
+
+# Security and SEO headers
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "SAMEORIGIN"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+X-DNS-Prefetch-Control = "on"
